@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 
-const API_BASE = 'https://cloudsec-backend.onrender.com/' // change to your backend URL
+const API_BASE = 'https://cloudsec-backend.onrender.com' // change to your backend URL
 
 export const scanNow = async () => {
     const res = await axios.get(`${API_BASE}/scan/cspm`)
