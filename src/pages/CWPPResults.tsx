@@ -9,7 +9,7 @@ const CWPPResults = () => {
     const fetchScan = async () => {
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:8000/scan/cwpp");
+            const res = await axios.post("https://cloudsec-backend.onrender.com/scan/cwpp");
             setData(res.data.results);
             toast.success("CWPP scan successful");
         } catch (error) {
